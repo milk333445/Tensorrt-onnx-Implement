@@ -1,0 +1,28 @@
+normal:
+    weight: "./weights/yolov5s.pt"
+    size: 640
+    conf_threshold: 0.5
+    iou_threshold: 0.45
+    fp16: false
+    classes: [0]
+onnx:
+    weight: "./yolov5s.onnx"
+    size: 640
+    conf_threshold: 0.5
+    iou_threshold: 0.45
+    fp16: False
+    classes:
+tensorrt:
+    weight: "./yolov5s.engine"
+    size: 640
+    conf_threshold: 0.5
+    iou_threshold: 0.45
+    fp16: False
+    classes:
+trt:
+    weight: "./yolov5s_trt.pth"
+    size: 640
+    conf_threshold: 0.5
+    iou_threshold: 0.45
+    fp16: False
+    classes:

@@ -1,0 +1,14 @@
+model_converter:
+    model_path: "yolov5s.pt"
+    image_path: "test.jpg"
+    onnx_output_path: "yolov5s.onnx"
+    trt_output_path: "yolov5s.engine"
+    work_space: 2 # GB
+    image_size:
+        - 640
+        - 640
+    batch_size: 1
+    dynamic: False
+    simplify: False
+    half: False
+    opset_version: 12
